@@ -15,4 +15,9 @@
   font-variation-settings: 'wght' var(--main-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--repeating-gradient-left-to-right),
+                    var(--repeating-gradient-top-to-bottom),
+                    var(--linear-gradient);
+  background-position: center;
+  background-size: cover;
 }
