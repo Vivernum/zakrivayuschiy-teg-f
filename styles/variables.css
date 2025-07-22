@@ -2,9 +2,28 @@
 :root {
   --main-font: Inter-Variable;
   --accent-font: PressStart2P;
-  --main-font-weight: 415;
-  --accent-font-weight: 715;
+
+  --main-text-font-weight: 415;
+  --accent-font-weight: 400;
+  --cards-accent-font-weight: 715;
+
   --repeating-gradient-left-to-right: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px);
   --repeating-gradient-top-to-bottom: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px);
   --linear-gradient: linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+  --cards-titles-font-size: 1.125rem;
+  --main-font-size: 1.125rem;
+
+  --titles-line-height: 100%;
+  --buttons-line-height: 90%;
+  --main-text-line-height: 1.3125;
+
+  --header-title-font-size: clamp(3.0625rem, 2.6966rem + 1.561vw, 4.0625rem);
+  --header-subtitle-font-size: clamp(0.875rem, 0.6692rem + 0.878vw, 1.4375rem);;
+
+  --main-bg-color: #fff;
+  --borders-color: #000;
+
+  --header-inline-padding: clamp(1rem, -1.4352rem + 10.3902vw, 7.65625rem);
+  --header-block-padding: clamp(7.5rem, 7.3171rem + 0.7805vw, 8rem);
 }
