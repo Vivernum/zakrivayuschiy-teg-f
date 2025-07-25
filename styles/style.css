@@ -76,7 +76,7 @@
   line-height: var(--titles-line-height);
   font-weight: var(--cards-titles-font-weight);
   padding-inline: 0.625rem;
-  padding-block: 0.3125rem;
+  padding-block: 0.25rem;
 }
 
 .card__image {
