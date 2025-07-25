@@ -80,6 +80,7 @@
 }
 
 .card__image {
+  display: block;
   inline-size: 100%;
   aspect-ratio: 1/1;
   border-block: 2px solid var(--borders-color);
@@ -95,11 +96,15 @@
 
 .card__content-wrapper {
   padding-inline: 1.5625rem;
-  padding-block: 1.65625rem;
+  padding-block: calc(1.5625rem + 4px) 1.5625rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5625rem;
+  gap: var(--card-content-gap);
 }
+
+/* Я ВИЖУ, ЧТО ВНУТРЕННИЙ ОСТУП У БЛОКА С ТЕКСТОМ
+   УЕЗЖАЕТ ПОД РАМКУ КАРТИНКИ, ПОЭТОМУ ПРИХОДИТСЯ 
+   КОМПЕНСИРОВАТЬ ЭТО CALC */
 
 .button-aligned {
   display: flex;
