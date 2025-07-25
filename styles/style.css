@@ -56,6 +56,12 @@
   font-size: var(--header-subtitle-font-size);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-content-gap);
+}
+
 .card {
   background-color: var(--main-bg-color);
   display: grid;
