@@ -51,4 +51,7 @@
   /* --label-stroke-color: #00812b; */
   /* ТУТ СРАЗУ СДЕЛАЛ АЛЬТЕРНАТИВНЫЙ ЦВЕТ ПРОСТО 
      ДЛЯ ПРОВЕРКИ ПРАВИЛЬНОЙ РАБОТЫ */
+
+  --save-button-padding-inline: 1.125rem;
+  --save-button-padding-block: 0.9375rem;
 }

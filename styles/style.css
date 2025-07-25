@@ -158,3 +158,36 @@
   font-size: var(--buttons-font-size);
   line-height: var(--buttons-line-height);
 }
+
+.save-button {
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--borders-color);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-inline-size: max-content;
+  padding-inline: var(--save-button-padding-inline);
+  padding-block: var(--save-button-padding-block);
+}
+
+.floppy-img {
+  inline-size: 1.3125rem;
+}
+
+.save-button__text {
+  font-family: var(--accent-font);
+  font-size: var(--buttons-font-size);
+  font-weight: var(--accent-font-weight);
+}
+
+@media (width <= 375px) {
+  .save-button {
+    flex-direction: column;
+  }
+
+  .floppy-img {
+    inline-size: 1.75rem;
+  }
+}
