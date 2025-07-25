@@ -4,7 +4,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -13,7 +12,8 @@
 .page {
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size);
-  font-variation-settings: 'wght' var(--main-text-font-weight);
+  /* font-variation-settings: 'wght' var(--main-text-font-weight); */
+  font-weight: var(--main-text-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-color: #b7b7b7;
@@ -30,6 +30,7 @@
 
 .header {
   font-family: var(--accent-font);
+  font-weight: var(--accent-font-weight);
   text-transform: uppercase;
   display: grid;
   gap: 1.25rem;
@@ -46,9 +47,77 @@
 
 .header__title {
   /* line-height: var(--titles-line-height); */
+  font-weight: inherit;
   font-size: var(--header-title-font-size);
 }
 
 .header__subtitle {
+  font-weight: inherit;
   font-size: var(--header-subtitle-font-size);
+}
+
+.card {
+  background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, min-content);
+  border: 2px solid var(--borders-color);
+}
+
+.card__title {
+  /* font-variation-settings: 'wght' var(--cards-titles-font-size); */
+  font-size: var(--cards-titles-font-size);
+  line-height: var(--titles-line-height);
+  font-weight: var(--cards-titles-font-weight);
+  padding-inline: 0.625rem;
+  padding-block: 0.3125rem;
+}
+
+.card__image {
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+  border-block: 2px solid var(--borders-color);
+  block-size: calc(100% + 0.25rem);
+}
+
+/* Я С BORDER ЧУТЬ НЕ УБИЛСЯ, ПОТОМУ ЧТО В ФИГМЕ
+   ИЗ-ЗА РАМОК УКАЗЫВАЕТСЯ НЕ СОВСЕМ КОРРЕКТНОЕ
+   РАССТОЯНИЕ МЕЖДУ БЛОКАМИ И ТУТ ТОЖЕ ПРИШЛОСЬ
+   ИСПОЛЬЗОВАТЬ КОСТЫЛЬ С CALC ПОТОМУ ЧТО ИНАЧЕ
+   ASPECT RATIO ИСПОЛЬЗУЕТ В РАСЧЕТЕ BORDER И ВЫСОТА
+   ИЗОБРАЖЕНИЕ СТАНОВИТСЯ РАВНОЙ 367 */
+
+.card__content-wrapper {
+  padding-inline: 1.5625rem;
+  padding-block: 1.65625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+
+.button-aligned {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: end;
+  align-items: center;
+}
+
+.like-icon {
+  inline-size: 1.5rem;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+
+.card__icon-button {
+  padding-inline: var(--button-inline-padding);
+  padding-block: var(--button-block-padding);
+  border: 2px solid var(--borders-color);
+}
+
+.button__text {
+  display: block;
+  font-family: var(--accent-font);
+  font-weight: var(--accent-font-weight);
+  font-size: var(--buttons-font-size);
+  line-height: var(--buttons-line-height);
 }
