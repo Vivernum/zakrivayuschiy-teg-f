@@ -172,8 +172,7 @@
   border: 2px solid var(--borders-color);
   display: flex;
   align-self: center;
-  /* margin-inline: auto; */
-  margin-block: 3.125rem;
+  margin-block-end: 3.125rem;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -253,4 +252,32 @@
   .dialog-window {
     max-inline-size: 21.3125rem;
   }
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.bright {
+  filter: brightness(1.5);
+}
+
+.gray {
+  filter: grayscale(0.75);
+}
+
+.contrast {
+  filter: contrast(1.5) blur(1px);
+}
+
+.sepia {
+  filter: sepia(2) blur(2px);
+}
+
+.epic {
+  filter: invert(1) brightness(0.5);
+}
+
+.tech {
+  filter: contrast(3);
 }
