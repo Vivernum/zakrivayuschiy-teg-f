@@ -14,25 +14,6 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-
-  <dialog class="dialog-window" id="dialog-id">
-
-        <div class="dialog-window__content">
-          <svg class="floppy-img--dialog" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <p class="dialog-window__text">Вставьте<span class="break"></span>дискету, чтобы продолжить</p>
-        </div>
-
-        <button 
-          class="dialog-window__button button"
-          type="button"
-          onclick="window['dialog-id'].close()"
-        >
-        ок</button>
-
-      </dialog>
-
     <header class="header">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
       <h2 class="header__subtitle">закрывающий тег</h2>
@@ -223,7 +204,7 @@
       <button 
         class="save-button button element"
         type="button"
-        onclick="window['dialog-id'].show()"
+        onclick="window['dialog-id'].showModal()"
       >
         <svg class="floppy-img" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
           <use href="./svg/floppy.svg#floppy"></use>
@@ -231,6 +212,25 @@
         <p class="save-button__text">Сохранить на память</p>
       </button>
     </main>
+
+    <dialog class="dialog-window" id="dialog-id">
+
+      <div class="dialog-window__content">
+        <svg class="floppy-img--dialog" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog-window__text">Вставьте<span class="break"></span>дискету, чтобы продолжить</p>
+      </div>
+
+      <button 
+        class="dialog-window__button button"
+        type="button"
+        onclick="window['dialog-id'].close()"
+      >
+      ок</button>
+
+      </dialog>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
