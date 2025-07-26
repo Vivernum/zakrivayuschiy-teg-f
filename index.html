@@ -14,13 +14,32 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
+
+  <dialog class="dialog-window" id="dialog-id">
+
+        <div class="dialog-window__content">
+          <svg class="floppy-img--dialog" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <p class="dialog-window__text">Вставьте<span class="break"></span>дискету, чтобы продолжить</p>
+        </div>
+
+        <button 
+          class="dialog-window__button button"
+          type="button"
+          onclick="window['dialog-id'].close()"
+        >
+        ок</button>
+
+      </dialog>
+
     <header class="header">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
       <h2 class="header__subtitle">закрывающий тег</h2>
     </header>
     <main class="main">
 
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/image.png" alt="Дом на колесах на ночной улице">
@@ -38,11 +57,11 @@
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">1 спринт: Я — чистый лист</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/kindaeasy.jpg" alt="Человек, которому все легко">
@@ -62,11 +81,11 @@
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">1 спринт: А если не получится?</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/vacation.jpg" alt="Человек на пляже у моря">
@@ -83,11 +102,11 @@
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/death.webp" alt="Человек вдавленный в землю">
@@ -106,11 +125,11 @@
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/lucky.jpg" alt="Богиня Удачи">
@@ -130,11 +149,11 @@
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">3 спринт: Обходные стратегии</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/toughrubber.jpg" alt="Человек в плохом состоянии">
@@ -150,11 +169,11 @@
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/peakrubber.webp" alt="Персонаж комикса в крутом кадре">
@@ -166,16 +185,16 @@
                                 хочется порешать, и в теории получше разобраться, и жизнь 
                                 не забыть пожить. В такие моменты очень нужна концентрация. 
                                 Вспомните, откуда вы её черпали.</p>
-          <p class="card__text">Тут я поннял, что это гораздо удобнее, чем фикс. величины</p>
+          <p class="card__text">Тут я понял, что это гораздо удобнее, чем фикс. величины</p>
           <div class="button-aligned">
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
-      <article class="card">
+      <article class="card element">
         <h3 class="card__title">«Сейчас я здесь»</h3>
         <div class="img__wrapper">
           <img loading="lazy" class="card__image" src="./images/meinfiveyears.png" alt="Человек за компьютером">
@@ -196,20 +215,21 @@
             <button>
               <img class="like-icon" src="./svg/heart_in_paths.svg">
             </button>
-            <button class="card__icon-button"><span class="card__like-button button__text">Like</span></button>
+            <button class="card__icon-button button"><span class="card__like-button button__text">Like</span></button>
           </div>
         </div>
       </article>
 
-      <button class="save-button">
-
+      <button 
+        class="save-button button element"
+        type="button"
+        onclick="window['dialog-id'].show()"
+      >
         <svg class="floppy-img" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="save-button__text">Сохранить на память</p>
-
       </button>
-
     </main>
     <script src="./scripts/like.js"></script>
   </body>

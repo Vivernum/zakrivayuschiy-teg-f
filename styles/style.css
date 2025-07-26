@@ -12,6 +12,7 @@
 .page {
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size);
+  position: relative;
   /* font-variation-settings: 'wght' var(--main-text-font-weight); */
   font-weight: var(--main-text-font-weight);
   min-inline-size: 320px;
@@ -61,6 +62,10 @@
   flex-direction: column;
   gap: var(--main-content-gap);
 }
+
+ /* .element {
+  margin-block: 3.125rem;
+ } */
 
 .card {
   background-color: var(--main-bg-color);
@@ -148,14 +153,17 @@
 .card__icon-button {
   padding-inline: var(--button-inline-padding);
   padding-block: var(--button-block-padding);
+}
+
+.button {
+  font-family: var(--accent-font);
+  font-weight: var(--accent-font-weight);
+  font-size: var(--buttons-font-size);
   border: 2px solid var(--borders-color);
 }
 
 .button__text {
   display: block;
-  font-family: var(--accent-font);
-  font-weight: var(--accent-font-weight);
-  font-size: var(--buttons-font-size);
   line-height: var(--buttons-line-height);
 }
 
@@ -164,6 +172,8 @@
   border: 2px solid var(--borders-color);
   display: flex;
   align-self: center;
+  /* margin-inline: auto; */
+  margin-block: 3.125rem;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -176,10 +186,47 @@
   inline-size: 1.3125rem;
 }
 
-.save-button__text {
+.dialog-window {
+  border: 2px solid var(--borders-color);
+  position: absolute;
+  /* transform: translate(-50% -50%); */
+  padding-inline: var(--dialog-window-padding-inline);
+  padding-block: var(--dialog-window-padding-block);
+  max-inline-size: 22.0625rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--dialog-window-gap);
+}
+
+.dialog-window__content {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.floppy-img--dialog {
+  inline-size: 2.4375rem;
+  flex-shrink: 0;
+}
+
+.dialog-window__text {
   font-family: var(--accent-font);
   font-size: var(--buttons-font-size);
   font-weight: var(--accent-font-weight);
+  line-height: var(--dialog-button-lh);
+  text-transform: uppercase;
+}
+
+.break::after {
+  content: '\A';
+  white-space: pre;
+}
+
+.dialog-window__button {
+  text-transform: uppercase;
+  padding-block: 0.65625rem;
+  line-height: var(--buttons-line-height);
 }
 
 @media (width <= 375px) {
@@ -189,5 +236,9 @@
 
   .floppy-img {
     inline-size: 1.75rem;
+  }
+
+  .dialog-window {
+    max-inline-size: 21.3125rem;
   }
 }

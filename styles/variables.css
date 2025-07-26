@@ -54,4 +54,15 @@
 
   --save-button-padding-inline: 1.125rem;
   --save-button-padding-block: 0.9375rem;
+
+  --dialog-window-padding-inline: 1.75rem;
+  --dialog-window-padding-block: 1.75rem;
+  --dialog-window-gap: 1.875rem;
+  --dialog-button-lh: 1.5;
+}
+
+@media (width <= 375px) {
+  :root {
+  --dialog-window-padding-inline: 2.375rem;
+  }
 }
