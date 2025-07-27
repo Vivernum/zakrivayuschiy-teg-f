@@ -160,6 +160,34 @@
   font-weight: var(--accent-font-weight);
   font-size: var(--buttons-font-size);
   border: 2px solid var(--borders-color);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  color: #fff;
+  mix-blend-mode: difference;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 var(--borders-color);
+}
+
+.button:hover::after{
+  content: '';
+  transform-origin: left;
+  transform: scaleX(1);
+  cursor: pointer;
 }
 
 .button__text {
