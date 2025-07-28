@@ -144,13 +144,26 @@
   align-items: center;
 }
 
+.card__icon-button {
+  outline: 2px solid transparent;
+  transition: outline 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--borders-color);
+}
+
 .like-icon {
   inline-size: 1.5rem;
   aspect-ratio: 1 / 1;
   display: block;
 }
 
-.card__icon-button {
+.card__like-button {
   padding-inline: var(--button-inline-padding);
   padding-block: var(--button-block-padding);
 }
