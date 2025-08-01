@@ -33,7 +33,7 @@
   --cards-title-paragraph-spacing: 1.1875rem;
 
   --header-title-font-size: clamp(3.0625rem, 2.6966rem + 1.561vw, 4.0625rem);
-  --header-subtitle-font-size: clamp(0.875rem, 0.6692rem + 0.878vw, 1.4375rem);;
+  --header-subtitle-font-size: clamp(0.875rem, 0.6692rem + 0.878vw, 1.4375rem);
 
   --main-bg-color: #fff;
   --borders-color: #000;
