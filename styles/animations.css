@@ -11,18 +11,16 @@
 */
 
 @keyframes scaling {
-  from {
+  0%, 100% {
     transform: scale(1);
   }
-  to {
+
+  50% {
     transform: scale(1.25);
   }
 }
 
 @keyframes sparkling {
-  from {
-    opacity: 0;
-  }
   to {
     opacity: 1;
   }

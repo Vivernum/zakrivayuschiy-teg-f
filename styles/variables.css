@@ -17,7 +17,7 @@
 
   --buttons-line-height: 0.9;
   --main-text-line-height: 1.3125;
-  --titles-line-height: 1.25;
+  --titles-line-height: 1.2215;
 
   /* ТАКИМИ ТАНЦАМИ С БУБНАМИ Я ЕЩЕ НЕ ЗАНИМАЛСЯ
      LINE HEIGHT В FIGMA И CSS СОВЕРШЕННО ПО-РАЗНОМУ
@@ -41,11 +41,11 @@
   --header-inline-padding: clamp(1rem, -1.4352rem + 10.3902vw, 7.65625rem);
   --header-block-padding: clamp(7.5rem, 7.3171rem + 0.7805vw, 8rem);
 
-  --button-inline-padding: 2.1875rem;
-  --button-block-padding: 0.65625rem;
+  --button-inline-size: 8.125rem;
+  --button-block-size: 2.25rem;
 
   --card-content-gap: 1.5625rem;
-  --main-content-gap: 3.125rem;
+  --main-content-gap: 3.25rem;
 
   --label-stroke-color: #fff;
   /* --label-stroke-color: #00812b; */
