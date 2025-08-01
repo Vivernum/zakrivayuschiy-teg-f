@@ -59,6 +59,12 @@
   --dialog-window-padding-block: 1.75rem;
   --dialog-window-gap: 1.875rem;
   --dialog-button-lh: 1.5;
+
+  --contour-color: #000;
+  --core-color: transparent;
+  --main-body-color: transparent;
+  --animation-fill-color: #ff0000;
+  --accent-animation-color: #000;
 }
 
 @media (width <= 375px) {
