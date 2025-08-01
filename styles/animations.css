@@ -20,6 +20,8 @@
   }
 }
 
+/* ЗДЕСЬ SCALE СДЕЛАН ДЛЯ 50% ДЛЯ ПЛАВНОСТИ АНИМАЦИИ */
+
 @keyframes sparkling {
   to {
     opacity: 1;
